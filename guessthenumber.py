@@ -7,12 +7,12 @@ speak('welcome to the game   guess the number')
 speak('you have 10 choices to guess the number')
 speak('choose wisely ')
 import random
-print('                                                                       you have entered the game\n'
-      '                                                                     you have a total of 10 guesses\n'
-      '                                                                           try your luck now\n')
+print('you have entered the game\n'
+      'you have a total of 10 guesses\n'
+      'try your luck now\n')
 n=random.randint(0,100)
 guess=0
-print('                                    Enter a choice')
+print('Enter a choice')
 speak('Enter a choice')
 while(guess<10):
     choice = int(input())
@@ -29,7 +29,7 @@ while(guess<10):
              # speak('you found in',guess+1,'guesses')
              break
     print('you have',9-guess,'no. of guesses left')
-    print('                                    enter your next choice')
+    print('enter your next choice')
     speak('enter your next choice')
     guess+=1
 print('the correct number is', n)
